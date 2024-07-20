@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C++ Technical Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+          <nav>
+          <h3>Documentation Menu</h3>
+          <div class="anchor"><a href="#what is C++">What is C++?</a></div>
+          <div class="anchor"><a href="#Objects and Classes">Objects and Classes</a></div>
+          <div class="anchor"><a href="#Inheritance">Inheritance</a></div>
+          <div class="anchor"><a href="#Polymorphism">Polymorphism</a></div>
+          <div class="anchor"><a href="#Abstraction">Abstraction</a></div>
+          <div class="anchor"><a href="#Encapsulation">Encapsulation</a></div>
+          </nav>
+          <main>
+        <div class="document">
+          <section id="what is C++">
+            <h1 class="C">What is C++?</h1>
+            <p>C++ (or “C-plus-plus”) is a programming language for building software. It’s an object-oriented language focusing on objects (data fields with unique attributes) rather than logic or functions. A common example of an object is a user account on a website. A user account typically comprises data like first name, last name, email address, etc., and can be easily replicated each time a new account is created. 
+              C++ was invented by Bjarne Stroustrup in 1979 to extend C, a procedural programming language, and offer programmers more control over memory and system resources.</p>
+              <p>The "Hello World" program is the first step in learning any programming language and one of the simplest programs you will learn. All you have to do is display the message "Hello World" on the screen. Let's look at the program:</p>
+              <div style="width: 100%; height: auto;">
+                <img src="./c image.webp" alt="C code" sizes="" srcset="" style="width: 100%; height: 250px;">
+              </div>
+              <p>C++ is an Object-Oriented Programming Language. The main pillars of Object-Oriented Programming are:</p>
+              <ul>
+                <li>Objects and classes</li>
+                <li>Inheritance</li>
+                <li>Polymorphism</li>
+                <li>Abstraction</li>
+                <li>Encapsulation</li>
+              </ul>
+          </section>
+          <section id="Objects and Classes">
+            <h2> Objects and Classes</h2>
+            <p>
+              In C++, classes and objects are fundamental concepts of object-oriented programming (OOP). They help in organizing code and managing complexity by grouping related data and functions.
+            </p>
+            <h4>Class:</h4>
+            <p  style="margin: 0px;">A class is a blueprint for creating objects. It defines a type and describes the behaviors and properties that objects of that type can have. A class includes member variables (data members) and member functions (methods).</p>
+            <h4>Object:</h4>
+            <p style="margin: 0px;">An object is an instance of a class. It contains actual values instead of definitions. Each object has its own set of data members and can use member functions defined in the class.</p>
+              <h4>Example</h4>
+              <p style="margin-top: 0px; margin-bottom: 10px;">Let's create a simple class called Car with some member variables and member functions.</p>
+              <img src="./Screenshot (3).png" alt="" style="width: 100%; height: auto;">
+          </section>
+          <section id="Inheritance">
+            <h2>Inheritance</h2>
+            <p>
+              Inheritance is a fundamental concept in object-oriented programming that allows a class (derived class) to inherit properties and behaviors from another class (base class). This helps in code reusability and establishing a relationship between classes.
+            </p>
+            <h4 style="margin: 0px; text-decoration: underline;">Types of Inheritance</h4>
+            <ol style="margin-left: 50px;">
+              <li><strong>Single Inheritance:</strong> A derived class inherits from a single base class.</li>
+              <li><strong>Multiple Inheritance:</strong> A derived class inherits from more than one base class.</li>
+              <li><strong>Multilevel Inheritance:</strong> A derived class is derived from another derived class.</li>
+              <li><strong>Hierarchical Inheritance:</strong> Multiple derived classes inherit from a single base class.</li>
+              <li><strong>Hybrid Inheritance:</strong> A combination of two or more types of inheritance.
+            </ol>
+          </section>
+          <section id="Polymorphism">
+            <h2>Polymorphism</h2>
+            <p>
+              Polymorphism is a key concept in object-oriented programming (OOP) that allows objects of different types to be treated as objects of a common super type. It is one of the core principles of OOP, alongside encapsulation and inheritance. Polymorphism allows for the definition of a single interface to entities of different types. <br>
+
+              There are two types of polymorphism in C++:
+                <ol style="margin-left: 50px;">
+                  <li>Compile-time Polymorphism (Static Polymorphism)</li>
+                  <li>Run-time Polymorphism (Dynamic Polymorphism)</li>
+                </ol>
+              
+            </p>
+          </section>
+          <section id="Abstraction">
+            <h2>Abstraction</h2>
+            <p>
+              Abstraction is one of the fundamental principles of object-oriented programming (OOP). It refers to the concept of hiding the complex implementation details of a system and exposing only the necessary and relevant parts to the user. This allows the user to interact with the system without needing to understand its inner workings. In C++, abstraction can be achieved using classes and access specifiers, as well as abstract classes and interfaces. <br>
+
+             <h4> Key Concepts of Abstraction</h4>
+              <ul>
+                <li><strong>Data Abstraction:</strong> Hiding the details of data implementation and showing only essential information.</li>
+                <li><strong>Functional Abstraction:</strong> Hiding the implementation details of functions and exposing only the necessary functionality.</li>
+              </ul>
+              <h4>Example of Data Abstraction</h4> <br>
+              Let's create a simple example to demonstrate data abstraction using a class in C++.
+            </p>
+            <img src="./Screenshot (4).png" alt="" style="width: 100%; height: auto;">
+          </section>
+          <section id="Encapsulation">
+            <h2>Encapsulation</h2>
+            <p>
+              Encapsulation is one of the fundamental principles of object-oriented programming (OOP). It refers to the bundling of data (attributes) and methods (functions) that operate on the data into a single unit, typically a class. Encapsulation restricts direct access to some of the object's components, which can prevent the accidental modification of data. <br>
+            <h4 style="text-decoration: underline;">Key Concepts of Encapsulation</h4> <br>
+            <ol>
+              <li><strong>Data Hiding:</strong> Encapsulation hides the internal state of the object from the outside world and only exposes a controlled interface. This helps in protecting the data from unauthorized access and modification.</li>
+              <li>
+                <strong>Access Modifiers:</strong> Encapsulation is achieved using access modifiers to define the visibility of the class members. The common access modifiers in C++ are: <br>
+                <ul style="color: black;">
+                  <li><strong>public:</strong> Members are accessible from outside the class.</li>
+                  <li><strong>private:</strong> Members are accessible only within the class.</li>
+                  <li><strong>protected:</strong> Members are accessible within the class and by derived classes.</li>
+                </ul>
+              </li>
+            </ol>
+            <h4>Example of Encapsulation</h4> <br>
+            Let's create a simple example to demonstrate encapsulation in C++.
+            </p>
+            <img src="./Screenshot (5).png" alt="" style="width: 100%; height: auto;">
+          </section>
+        </div>
+      </main>
+</body>
+</html>
